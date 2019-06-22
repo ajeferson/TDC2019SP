@@ -2,7 +2,7 @@ import Foundation
 import NaturalLanguage
 
 let exampleOfNotHintedRecognition = example(of: "Not Hinted Recognition") {
-  let corpus = "E aqui estamos no primeiro Cocoaheads de 2019!"
+  let corpus = "E aqui estamos no primeiro TDC SP 2019!"
   guard let language = NLLanguageRecognizer.dominantLanguage(for: corpus) else {
     print("Is that an alien language or something?")
     return
@@ -12,7 +12,7 @@ let exampleOfNotHintedRecognition = example(of: "Not Hinted Recognition") {
 //exampleOfNotHintedRecognition()
 
 let exampleOfHintedRecognition = example(of: "Hinted Recognition") {
-  let corpus = "And here we are at the first Cocoaheads of 2019!"
+  let corpus = "And here we are at TDC SP 2019!"
 
   let recognizer = NLLanguageRecognizer()
   recognizer.processString(corpus)

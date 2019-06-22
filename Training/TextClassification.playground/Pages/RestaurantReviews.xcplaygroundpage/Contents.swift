@@ -2,7 +2,7 @@ import Foundation
 import CreateML
 
 // Loading dataset
-let inputPath = "/Users/alanjeferson/projects/CocoaheadsFloripa21/Training/TextClassification.playground/Pages/RestaurantReviews.xcplaygroundpage/Resources/RestaurantReviews.json"
+let inputPath = "/Users/alanjeferson/projects/TDC2019SP/Training/TextClassification.playground/Pages/RestaurantReviews.xcplaygroundpage/Resources/RestaurantReviews.json"
 let inputURL = URL(fileURLWithPath: inputPath)
 let dataset = try MLDataTable(contentsOf: inputURL)
 
@@ -31,7 +31,7 @@ print(testMetrics.confusion.description)
 
 // Otherwise, persist the CoreML model file
 let metadata = MLModelMetadata(author: "Alan Jeferson",
-                               shortDescription: "Restaurant Reviews for Cocoaheads",
+                               shortDescription: "Restaurant Reviews for TDC SP",
                                version: "1.0")
 let outputPath = "/Users/alanjeferson/Desktop/nlf/RestaurantReviewClassifier.mlmodel"
 let outputURL = URL(fileURLWithPath: outputPath)

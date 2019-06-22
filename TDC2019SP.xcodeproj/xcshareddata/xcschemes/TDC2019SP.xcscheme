@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F371BEF122512B9E0019B7C2"
-               BuildableName = "Training.framework"
-               BlueprintName = "Training"
-               ReferencedContainer = "container:CocoaheadsFloripa21.xcodeproj">
+               BlueprintIdentifier = "F3EC28D222516CE70085C371"
+               BuildableName = "TDC2019SP.app"
+               BlueprintName = "TDC2019SP"
+               ReferencedContainer = "container:TDC2019SP.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -27,10 +27,17 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F3EC28D222516CE70085C371"
+            BuildableName = "TDC2019SP.app"
+            BlueprintName = "TDC2019SP"
+            ReferencedContainer = "container:TDC2019SP.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
       </Testables>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -42,17 +49,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F371BEF122512B9E0019B7C2"
-            BuildableName = "Training.framework"
-            BlueprintName = "Training"
-            ReferencedContainer = "container:CocoaheadsFloripa21.xcodeproj">
+            BlueprintIdentifier = "F3EC28D222516CE70085C371"
+            BuildableName = "TDC2019SP.app"
+            BlueprintName = "TDC2019SP"
+            ReferencedContainer = "container:TDC2019SP.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -60,15 +66,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F371BEF122512B9E0019B7C2"
-            BuildableName = "Training.framework"
-            BlueprintName = "Training"
-            ReferencedContainer = "container:CocoaheadsFloripa21.xcodeproj">
+            BlueprintIdentifier = "F3EC28D222516CE70085C371"
+            BuildableName = "TDC2019SP.app"
+            BlueprintName = "TDC2019SP"
+            ReferencedContainer = "container:TDC2019SP.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

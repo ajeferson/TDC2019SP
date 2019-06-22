@@ -2,7 +2,7 @@ import Foundation
 import CreateML
 
 // Loading dataset
-let inputPath = "/Users/alanjeferson/projects/CocoaheadsFloripa21/Training/WordTagging.playground/Resources/NamesLess.json"
+let inputPath = "/Users/alanjeferson/projects/TDC2019SP/Training/WordTagging.playground/Resources/NamesLess.json"
 let inputURL = URL(fileURLWithPath: inputPath)
 let dataset = try MLDataTable(contentsOf: inputURL)
 
@@ -55,7 +55,7 @@ names.forEach { name in
 
 // Otherwise, persist the CoreML model file
 let metadata = MLModelMetadata(author: "Alan Jeferson",
-                               shortDescription: "Names Tagger for Cocoaheads",
+                               shortDescription: "Names Tagger for TDC SP",
                                version: "1.0")
 let outputPath = "/Users/alanjeferson/Desktop/nlf/NameTagger.mlmodel"
 let outputURL = URL(fileURLWithPath: outputPath)

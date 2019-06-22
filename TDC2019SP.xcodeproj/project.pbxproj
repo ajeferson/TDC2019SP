@@ -43,7 +43,7 @@
 		F3EC28B82251521F0085C371 /* MovieReviewClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MovieReviewClassifier.mlmodel; sourceTree = "<group>"; };
 		F3EC28BA2251529F0085C371 /* CustomTextClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextClassifier.swift; sourceTree = "<group>"; };
 		F3EC28C9225155C50085C371 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
-		F3EC28D322516CE70085C371 /* CocoaheadsFloripa21.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaheadsFloripa21.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3EC28D322516CE70085C371 /* TDC2019SP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDC2019SP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3EC28D522516CE80085C371 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3EC28DA22516CE80085C371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3EC28DC22516CE90085C371 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 		F371BEB922512A8F0019B7C2 = {
 			isa = PBXGroup;
 			children = (
-				F3EC28D422516CE80085C371 /* CocoaheadsFloripa21 */,
+				F3EC28D422516CE80085C371 /* TDC2019SP */,
 				F371BEF322512B9E0019B7C2 /* Training */,
 				F371BEC322512A8F0019B7C2 /* Products */,
 				F3EC28CB225155E70085C371 /* Frameworks */,
@@ -107,7 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				F371BEF222512B9E0019B7C2 /* Training.framework */,
-				F3EC28D322516CE70085C371 /* CocoaheadsFloripa21.app */,
+				F3EC28D322516CE70085C371 /* TDC2019SP.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,7 +130,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F3EC28D422516CE80085C371 /* CocoaheadsFloripa21 */ = {
+		F3EC28D422516CE80085C371 /* TDC2019SP */ = {
 			isa = PBXGroup;
 			children = (
 				F3EC28D522516CE80085C371 /* AppDelegate.swift */,
@@ -143,7 +143,7 @@
 				F32E161422516D3F00AD1226 /* TextClassification */,
 				F32E161F2251737400AD1226 /* NLP.playground */,
 			);
-			path = CocoaheadsFloripa21;
+			path = TDC2019SP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,9 +178,9 @@
 			productReference = F371BEF222512B9E0019B7C2 /* Training.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F3EC28D222516CE70085C371 /* CocoaheadsFloripa21 */ = {
+		F3EC28D222516CE70085C371 /* TDC2019SP */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F3EC28E222516CE90085C371 /* Build configuration list for PBXNativeTarget "CocoaheadsFloripa21" */;
+			buildConfigurationList = F3EC28E222516CE90085C371 /* Build configuration list for PBXNativeTarget "TDC2019SP" */;
 			buildPhases = (
 				F3EC28CF22516CE70085C371 /* Sources */,
 				F3EC28D022516CE70085C371 /* Frameworks */,
@@ -190,9 +190,9 @@
 			);
 			dependencies = (
 			);
-			name = CocoaheadsFloripa21;
+			name = TDC2019SP;
 			productName = CocoaheadsFloripa21;
-			productReference = F3EC28D322516CE70085C371 /* CocoaheadsFloripa21.app */;
+			productReference = F3EC28D322516CE70085C371 /* TDC2019SP.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -213,7 +213,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F371BEBD22512A8F0019B7C2 /* Build configuration list for PBXProject "CocoaheadsFloripa21" */;
+			buildConfigurationList = F371BEBD22512A8F0019B7C2 /* Build configuration list for PBXProject "TDC2019SP" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -226,7 +226,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F3EC28D222516CE70085C371 /* CocoaheadsFloripa21 */,
+				F3EC28D222516CE70085C371 /* TDC2019SP */,
 				F371BEF122512B9E0019B7C2 /* Training */,
 			);
 		};
@@ -485,12 +485,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4NVW2SSPZ5;
-				INFOPLIST_FILE = CocoaheadsFloripa21/Info.plist;
+				INFOPLIST_FILE = TDC2019SP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.ajeferson.CocoaheadsFloripa21;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ajeferson.tdc2019sp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -503,12 +503,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4NVW2SSPZ5;
-				INFOPLIST_FILE = CocoaheadsFloripa21/Info.plist;
+				INFOPLIST_FILE = TDC2019SP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.ajeferson.CocoaheadsFloripa21;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ajeferson.tdc2019sp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -518,7 +518,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F371BEBD22512A8F0019B7C2 /* Build configuration list for PBXProject "CocoaheadsFloripa21" */ = {
+		F371BEBD22512A8F0019B7C2 /* Build configuration list for PBXProject "TDC2019SP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F371BED222512A900019B7C2 /* Debug */,
@@ -536,7 +536,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F3EC28E222516CE90085C371 /* Build configuration list for PBXNativeTarget "CocoaheadsFloripa21" */ = {
+		F3EC28E222516CE90085C371 /* Build configuration list for PBXNativeTarget "TDC2019SP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F3EC28E322516CE90085C371 /* Debug */,

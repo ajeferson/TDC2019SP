@@ -1,6 +1,6 @@
 //
 //  WordTaggingViewController.swift
-//  CocoaheadsFloripa21
+//  TDC2019SP
 //
 //  Created by Alan Jeferson on 3/31/19.
 //  Copyright © 2019 Alan. All rights reserved.
