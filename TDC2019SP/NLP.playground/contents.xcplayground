@@ -4,6 +4,7 @@
         <page name='LanguageIdentification'/>
         <page name='Tokenization'/>
         <page name='POS-Tagging'/>
-        <page name='Sentiment Analysis'/>
+        <page name='SentimentAnalysis'/>
+        <page name='WordEmbedding'/>
     </pages>
 </playground>
