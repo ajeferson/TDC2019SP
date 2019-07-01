@@ -10,11 +10,11 @@ import Foundation
 import NaturalLanguage
 
 class CustomTextClassifier {
-  private let scheme = NLTagScheme("MovieReview")
+  private let scheme = NLTagScheme("SpamScheme")
   private let options: NLTagger.Options = [.omitPunctuation]
 
   private lazy var tagger: NLTagger = {
-    let url = Bundle.main.url(forResource: "MovieReviewClassifier", withExtension: "mlmodelc")!
+    let url = Bundle.main.url(forResource: "SpamClassifier", withExtension: "mlmodelc")!
     let model = try! NLModel(contentsOf: url)
     let tagger = NLTagger(tagSchemes: [scheme])
     tagger.setModels([model], forTagScheme: scheme)

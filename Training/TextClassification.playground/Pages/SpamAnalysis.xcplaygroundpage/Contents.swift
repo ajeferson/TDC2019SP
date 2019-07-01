@@ -1,27 +1,38 @@
 import Foundation
 import CreateML
 
-// Preprocessing
-let path = "/Users/alanjeferson/projects/TDC2019SP/Training/TextClassification.playground/Pages/SpamAnalysis.xcplaygroundpage/Resources/SMSSpamCollection.txt"
-let url = URL(fileURLWithPath: path)
-let raw = try String(contentsOf: url)
-let sents = raw.components(separatedBy: CharacterSet.newlines)
+// Loading dataset
+let inputPath = "/Users/alanjeferson/projects/TDC2019SP/Training/TextClassification.playground/Pages/SpamAnalysis.xcplaygroundpage/Resources/HamSpamDataset.json"
+let inputURL = URL(fileURLWithPath: inputPath)
+let dataset = try MLDataTable(contentsOf: inputURL)
 
-struct SpamPoint: Codable {
-  let label: String
-  let text: String
-}
+// Splitting into training/test sets
+let splitRatio = 0.8
+let (trainingSet, testSet) = dataset.randomSplit(by: splitRatio, seed: 7)
 
-let points = sents.compactMap { sent -> SpamPoint? in
-  let components = sent.components(separatedBy: "\t")
-  guard components.count > 1 else {
-    return nil
-  }
-  return SpamPoint(label: components[0], text: components[1])
-}
+// Creating the model
+let params = MLTextClassifier.ModelParameters(algorithm: .maxEnt(revision: 1),
+                                              language: .english)
+let model  = try MLTextClassifier(trainingData: trainingSet,
+                                  textColumn: "text",
+                                  labelColumn: "label",
+                                  parameters: params)
 
-let encoder = JSONEncoder()
-let data = try encoder.encode(points)
+// How well the model performed on test set (unseen data)
+let testMetrics = model.evaluation(on: testSet)
+let testAccuracy = testMetrics.accuracy * 100
 
-let output = URL(fileURLWithPath: "/Users/alanjeferson/Desktop/spams.json")
-try data.write(to: output)
+print("Test Metrics:")
+print("Accuracy: \(testAccuracy)")
+print("Precision and Recall:")
+print(testMetrics.precisionRecall)
+print("Confusion Matrix:")
+print(testMetrics.confusion.description)
+
+// Otherwise, persist the CoreML model file
+let metadata = MLModelMetadata(author: "Alan Jeferson",
+                               shortDescription: "Spam Classifier for TDC SP",
+                               version: "1.0")
+let outputPath = "/Users/alanjeferson/Desktop/NLF/SpamClassifier.mlmodel"
+let outputURL = URL(fileURLWithPath: outputPath)
+//try model.write(to: outputURL, metadata: metadata)
