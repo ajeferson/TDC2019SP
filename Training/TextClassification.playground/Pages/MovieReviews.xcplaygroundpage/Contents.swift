@@ -6,7 +6,7 @@ let params = MLTextClassifier.ModelParameters(algorithm: .maxEnt(revision: 1),
                                               language: .english)
 let model = try MLTextClassifier(trainingData: .labeledDirectories(at: trainingSetURL))
 
-let testSetURL = URL(fileURLWithPath: "/Users/alanjeferson/projects/TDC2019SP/Training/TextClassification.playground/Pages/MovieReviews.xcplaygroundpage/Resourcess/test")
+let testSetURL = URL(fileURLWithPath: "/Users/alanjeferson/projects/TDC2019SP/Training/TextClassification.playground/Pages/MovieReviews.xcplaygroundpage/Resources/test")
 let testMetrics = model.evaluation(on: .labeledDirectories(at: testSetURL))
 print("Test Metrics:")
 print("Accuracy: \(testMetrics.accuracy)")

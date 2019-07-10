@@ -2,7 +2,7 @@ import Foundation
 import CreateML
 
 // Loading dataset
-let inputPath = "/Users/alanjeferson/Downloads/yahoo_answers_csv/result.json"
+let inputPath = "/Users/alanjeferson/projects/TDC2019SP/Training/TextClassification.playground/Pages/SpamAnalysis.xcplaygroundpage/Resources/HamSpamDataset.json"
 let inputURL = URL(fileURLWithPath: inputPath)
 let dataset = try MLDataTable(contentsOf: inputURL)
 
@@ -35,4 +35,4 @@ let metadata = MLModelMetadata(author: "Alan Jeferson",
                                version: "1.0")
 let outputPath = "/Users/alanjeferson/Desktop/NLF/SpamClassifier.mlmodel"
 let outputURL = URL(fileURLWithPath: outputPath)
-//try model.write(to: outputURL, metadata: metadata)
+try model.write(to: outputURL, metadata: metadata)
