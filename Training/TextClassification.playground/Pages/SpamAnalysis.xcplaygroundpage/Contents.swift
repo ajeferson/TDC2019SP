@@ -2,7 +2,7 @@ import Foundation
 import CreateML
 
 // Loading dataset
-let inputPath = "/Users/alanjeferson/projects/TDC2019SP/Training/TextClassification.playground/Pages/SpamAnalysis.xcplaygroundpage/Resources/HamSpamDataset.json"
+let inputPath = "/Users/alanjeferson/Downloads/yahoo_answers_csv/result.json"
 let inputURL = URL(fileURLWithPath: inputPath)
 let dataset = try MLDataTable(contentsOf: inputURL)
 

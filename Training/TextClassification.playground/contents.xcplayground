@@ -4,5 +4,6 @@
         <page name='RestaurantReviews'/>
         <page name='MovieReviews'/>
         <page name='SpamAnalysis'/>
+        <page name='YahooAnswers'/>
     </pages>
 </playground>
