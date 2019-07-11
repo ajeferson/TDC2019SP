@@ -54,7 +54,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Classification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYw-Sk-xea">
-                                                    <rect key="frame" x="16" y="11.5" width="138.5" height="21"/>
+                                                    <rect key="frame" x="16" y="11.5" width="139" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -108,7 +108,7 @@
         <!--Word Tagging-->
         <scene sceneID="a5t-9k-N2w">
             <objects>
-                <tableViewController id="ciS-vy-xji" customClass="WordTaggingViewController" customModule="CocoaheadsFloripa21" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="ciS-vy-xji" customClass="WordTaggingViewController" customModule="TDC2019SP" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7zZ-ZT-Hlx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,10 +141,10 @@
             </objects>
             <point key="canvasLocation" x="2103" y="-387"/>
         </scene>
-        <!--Movie Reviews-->
+        <!--Spam Analysis-->
         <scene sceneID="M6j-Sy-THe">
             <objects>
-                <viewController id="R4Q-w5-4Ri" customClass="TextClassificationViewController" customModule="CocoaheadsFloripa21" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="R4Q-w5-4Ri" customClass="TextClassificationViewController" customModule="TDC2019SP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZgY-3Z-EZe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -169,7 +169,7 @@
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaq-dt-I3h">
                                         <rect key="frame" x="123" y="230" width="54" height="30"/>
-                                        <state key="normal" title="Classify"/>
+                                        <state key="normal" title="Analyse"/>
                                         <connections>
                                             <action selector="didTouchClassifyButton:" destination="R4Q-w5-4Ri" eventType="touchUpInside" id="fbN-pQ-et8"/>
                                         </connections>
@@ -204,7 +204,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mFx-Sq-RKU"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Movie Reviews" id="AzR-Uw-OLo"/>
+                    <navigationItem key="navigationItem" title="Spam Analysis" id="AzR-Uw-OLo"/>
                     <connections>
                         <outlet property="inputTextView" destination="qkR-gL-qeQ" id="RM4-n2-FlR"/>
                         <outlet property="resultLabel" destination="9Rs-Tp-aet" id="Yjd-Oy-DnT"/>

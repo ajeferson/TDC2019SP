@@ -34,7 +34,6 @@ class BrownTagging {
       print(labels)
 
       let model = try NLModel(mlModel: rawTagger.model)
-
       let scheme = NLTagScheme("Brown")
       let tagger = NLTagger(tagSchemes: [scheme])
       tagger.setModels([model], forTagScheme: scheme)

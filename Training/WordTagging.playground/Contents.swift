@@ -39,7 +39,7 @@ print(testMetrics.precisionRecall)
 print("Confusion Matrix:")
 print(testMetrics.confusion.description)
 
-//// Model's description
+// Model's description
 print(model.description)
 
 // Evaluating male name
