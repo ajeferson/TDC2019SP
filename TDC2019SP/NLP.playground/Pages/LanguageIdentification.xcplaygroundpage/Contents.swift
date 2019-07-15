@@ -2,14 +2,14 @@ import Foundation
 import NaturalLanguage
 
 let exampleOfNotHintedRecognition = example(of: "Not Hinted Recognition") {
-  let corpus = "E aqui estamos no primeiro TDC SP 2019!"
+  let corpus = "Apple Park is the Apple’s headquarters located in Cupertino."
   guard let language = NLLanguageRecognizer.dominantLanguage(for: corpus) else {
     print("Is that an alien language or something?")
     return
   }
   print("Language: \(language.rawValue)")
 }
-//exampleOfNotHintedRecognition()
+exampleOfNotHintedRecognition()
 
 let exampleOfHintedRecognition = example(of: "Hinted Recognition") {
   let corpus = "And here we are at TDC SP 2019!"
