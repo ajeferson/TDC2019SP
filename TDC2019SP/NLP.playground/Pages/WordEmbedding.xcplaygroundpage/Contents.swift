@@ -12,18 +12,19 @@ let exampleOfWordEmbeddingInfo = example(of: "Word Embedding Info") {
 }
 //exampleOfWordEmbeddingInfo()
 
-let exampleOfEmbeddingNeighbors = example(of: "Embedding Neighbors") {
-  guard let embedding = NLEmbedding.wordEmbedding(for: .portuguese) else { exit(0) }
-  if let vector = embedding.vector(for: "computador") {
-    print(vector.count) // should be equal embedding.dimension
-  }
+//guard let embedding = NLEmbedding.wordEmbedding(for: .english) else { exit(0) }
+//guard let computerVector = embedding.vector(for: "computer") else { exit(0) }
+//computerVector.count // 300
+//embedding.dimension
+//let laptopDistance = embedding.distance(between: "computer", and: "laptop")    // 0.8865093588829
+//let guitarDistance = embedding.distance(between: "computer", and: "pineapple") // 1.3616414070129
+//let neighbors = embedding.neighbors(for: "computer", maximumCount: 5, distanceType: .cosine).map { $0.0 } // workstation, mainframe, laptop, software, computing
 
-  print(embedding.distance(between: "computador", and: "laptop"))
-  print(embedding.distance(between: "computafor", and: "guitarra"))
 
-  // .cosine is the way of calculating the distance between two vectors in the embedding space
-  embedding.neighbors(for: "computador", maximumCount: 5, distanceType: .cosine).forEach { word, distance in
-    print(word, distance)
-  }
-}
-exampleOfEmbeddingNeighbors()
+guard let embedding = NLEmbedding.wordEmbedding(for: .english) else { exit(0) }
+let dimensions = embedding.dimension
+guard let computerVector = embedding.vector(for: "computer") else { exit(0) }
+let laptopDistance = embedding.distance(between: "computer", and: "laptop")
+let neighbors = embedding.neighbors(for: "computer",
+                                    maximumCount: 5,
+                                    distanceType: .cosine)

@@ -3,23 +3,22 @@ import PlaygroundSupport
 
 let exampleOfWordTokenizer = example(of: "Word Tokenizer") {
   var corpus = "Apple Park is the Apple’s headquarters located in Cupertino."
-  print("Raw: \(corpus)")
-
   let tokenizer = NLTokenizer(unit: .word)
   tokenizer.string = corpus
-  tokenizer.setLanguage(.english)
+
+  let ranges = tokenizer.tokens(for: corpus.startIndex..<corpus.endIndex)
+  let tokens = ranges.map { String(corpus[$0]) }
+//  tokenizer.enumerateTokens(in: corpus.fullRange, using: { (range, attributes) -> Bool in
+//    let token = corpus.substring(with: range)
+//    print(token)
+//    return true
+//  })
   
-  print("Enumerating...")
-  tokenizer.enumerateTokens(in: corpus.fullRange, using: { (range, attributes) -> Bool in
-    let token = corpus.substring(with: range)
-    print(token)
-    return true
-  })
-  
-  let words = tokenizer.stringTokens(for: corpus)
-  print("Words: \(words)")
+//  let words = tokenizer.stringTokens(for: corpus)
+//  print("Words: \(words)")
+  print(tokens)
 }
-//exampleOfWordTokenizer()
+exampleOfWordTokenizer()
 
 let exampleOfSentTokenizer = example(of: "Sent Tokenizer") {
   var corpus = "Apple Park is the Apple’s headquarters located in Cupertino. It is really fun there."
