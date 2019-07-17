@@ -17,7 +17,6 @@
 		F32E162A2251843B00AD1226 /* RestaurantReviewClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F32E16292251843B00AD1226 /* RestaurantReviewClassifier.mlmodel */; };
 		F32E162C2251845800AD1226 /* RestaurantReviewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32E162B2251845800AD1226 /* RestaurantReviewer.swift */; };
 		F33C4F7622C996160093B8B4 /* SpamClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F33C4F7522C996160093B8B4 /* SpamClassifier.mlmodel */; };
-		F347BFE722DECE260050DAC7 /* TopicsClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F347BFE622DECE260050DAC7 /* TopicsClassifier.mlmodel */; };
 		F371BEF622512B9E0019B7C2 /* Training.h in Headers */ = {isa = PBXBuildFile; fileRef = F371BEF422512B9E0019B7C2 /* Training.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3B6A8542252BA3F00434540 /* BrownTagger.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F3B6A8532252BA3F00434540 /* BrownTagger.mlmodel */; };
 		F3B6A8562252BB7600434540 /* BrownTagging.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B6A8552252BB7600434540 /* BrownTagging.swift */; };
@@ -34,7 +33,6 @@
 		F32E16292251843B00AD1226 /* RestaurantReviewClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RestaurantReviewClassifier.mlmodel; sourceTree = "<group>"; };
 		F32E162B2251845800AD1226 /* RestaurantReviewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantReviewer.swift; sourceTree = "<group>"; };
 		F33C4F7522C996160093B8B4 /* SpamClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SpamClassifier.mlmodel; sourceTree = "<group>"; };
-		F347BFE622DECE260050DAC7 /* TopicsClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TopicsClassifier.mlmodel; sourceTree = "<group>"; };
 		F366ACBF22513A6B0026C532 /* CustomWordTagger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWordTagger.swift; sourceTree = "<group>"; };
 		F366ACD7225147EA0026C532 /* NameTagger.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NameTagger.mlmodel; sourceTree = "<group>"; };
 		F371BEF222512B9E0019B7C2 /* Training.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Training.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,7 +74,6 @@
 		F32E161422516D3F00AD1226 /* TextClassification */ = {
 			isa = PBXGroup;
 			children = (
-				F347BFE622DECE260050DAC7 /* TopicsClassifier.mlmodel */,
 				F32E16292251843B00AD1226 /* RestaurantReviewClassifier.mlmodel */,
 				F3EC28B82251521F0085C371 /* MovieReviewClassifier.mlmodel */,
 				F33C4F7522C996160093B8B4 /* SpamClassifier.mlmodel */,
@@ -281,7 +278,6 @@
 				F3B6A8542252BA3F00434540 /* BrownTagger.mlmodel in Sources */,
 				F3EC28D622516CE80085C371 /* AppDelegate.swift in Sources */,
 				F32E161622516E3100AD1226 /* WordTaggingViewController.swift in Sources */,
-				F347BFE722DECE260050DAC7 /* TopicsClassifier.mlmodel in Sources */,
 				F3B6A8562252BB7600434540 /* BrownTagging.swift in Sources */,
 				F32E161722516E4700AD1226 /* CustomWordTagger.swift in Sources */,
 			);
