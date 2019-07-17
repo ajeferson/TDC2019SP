@@ -20,13 +20,7 @@ let model  = try MLTextClassifier(trainingData: trainingSet,
 // How well the model performed on test set (unseen data)
 let testMetrics = model.evaluation(on: testSet)
 let testAccuracy = testMetrics.accuracy * 100
-
-print("Test Metrics:")
 print("Accuracy: \(testAccuracy)")
-print("Precision and Recall:")
-print(testMetrics.precisionRecall)
-print("Confusion Matrix:")
-print(testMetrics.confusion.description)
 
 // Otherwise, persist the CoreML model file
 let metadata = MLModelMetadata(author: "Alan Jeferson",
